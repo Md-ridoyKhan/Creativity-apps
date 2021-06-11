@@ -1,0 +1,1272 @@
+/**###########################################
+
+
+--------#####--------
+Template Name: 
+Template URI: 
+Description: This is html5 template
+Author: Rayhan khan
+Author URI: 
+Version: 1.0
+--------#####--------
+
+
+===========================
+CSS INDEX
+===========================
+
+1. home
+    1.1 preloader area here
+    1.2 header top area here
+    1.3 header area here
+    1.4 banner area here
+    1.5 company logo area here
+    1.6 i-am area here
+    1.7 ourService area here
+    1.8 life area here
+    1.9 ourPort area here
+    1.10 counterUp area here
+    1.11 creativeTeam area here
+    1.12 latestNews area here
+    1.13 footer area here
+    1.14 copyRight area here
+
+2. about us
+    2.1 about banner area here
+    2.2 creativeThink area here
+    2.3 testmonial area here
+
+3. header area here
+
+
+###########################################**/
+
+
+/*########################
+1. home ---------------[########################]
+########################*/
+
+/*===========================
+1.1 preloader area here  
+===========================*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.loading {
+    width: 90px;
+    height: 90px;
+    background: transparent;
+    border: 10px solid var(--mainColor);
+    border-top: transparent;
+    border-bottom: transparent;
+    border-radius: 50%;
+    animation: load 1.2s linear infinite;
+}
+@keyframes load {
+    25%{
+        border-left-color: tomato;
+    }
+    50%{
+        border-right-color: brown;
+    }
+    75%{
+        border-left-color: yellow;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/*---------------------------
+ preloader area ends here  
+---------------------------*/
+
+
+/*===========================
+1.2 header top area here
+===========================*/
+.header-top {
+    background: var(--textColor);
+    padding: 26px 0px;
+}
+.header-top-contact {
+    display: flex;
+    justify-content: space-between;
+}
+ul.ht-contact li {
+    display: inline-block;
+    margin-right: 20px;
+}
+ul.ht-contact li a {
+    display: block;
+}
+ul.ht-contact li a:hover i{
+    color: var(--mainColor);
+}
+ul.ht-contact li a:hover span{
+    color: var(--mainColor);
+}
+ul.ht-contact li a i {
+    color: var(--whiteColor);
+    margin-right: 6px;
+}
+ul.ht-contact li a span {
+    color: var(--whiteColor);
+    font-size: 16px;
+    font-family: "tt-m";
+}
+ul.ht-social li {
+    display: inline-block;
+    margin-left: 20px;
+}
+ul.ht-social li a {
+    display: block;
+}
+ul.ht-social li a i{
+    color: var(--whiteColor);
+}
+ul.ht-social li a:hover i{
+    color: var(--mainColor);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+/*---------------------------
+ header top area ends here  
+---------------------------*/
+
+
+/*===========================
+1.3 header area here
+===========================*/
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    line-height: 100px;
+    background: var(--whiteColor);
+    border-bottom: 1px solid var(--border);
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+header.active {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    line-height: 100px;
+    border-bottom: none;
+    box-shadow: var(--shadowBottom);
+    z-index: 99;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* logo  */
+.header-logo a {
+    display: block;
+}
+.header-logo a img {
+    max-width: 100%;
+}
+.header .nav > li {
+    margin: 0px 10px;
+}
+.header .nav > li:last-child {
+    position: relative;
+}
+.header .nav > li > a {
+    font-size: 24px;
+    text-transform: capitalize;
+    display: block;
+}
+.header .nav > li:last-child > a::after {
+    font-family: 'Font Awesome 5 Free';
+    content: "\002b";
+    font-weight: 900;
+    font-size: 18px;
+    margin-left: 4px;
+    line-height: 0px;
+}
+.header .nav > li > a:hover{
+    color: var(--mainColor);
+}
+/* sub menu  */
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    padding: 10px 20px;
+    background: var(--mainColor);
+    transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform-origin: top;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+    -moz-transform-origin: top;
+    -webkit-transform-origin: top;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    box-shadow: var(--shadowMain);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    z-index: 1;
+}
+.header .nav > li:hover .sub-menu {
+    transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    z-index: 50;
+}
+.sub-menu li {
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+.sub-menu li a {
+    display: block;
+    font-size: 20px;
+    font-family: "tt-b";
+    color: var(--whiteColor);
+    text-transform: capitalize;
+    letter-spacing: 0px;
+}
+.sub-menu li a:hover{
+    color: var(--textColor);
+}
+/* header icon  */
+.header-icon {
+    display: flex;
+}
+.header-icon li:last-child{
+    margin-left: 30px;
+}
+.header-icon li a {
+    display: block;
+}
+.header-icon li a img {
+    max-width: 100%;
+}
+/* close nav  */
+.close-nav {
+    display: none;
+}
+/* nav toggler  */
+.nav-toggler {
+    width: 44px;
+    height: 44px;
+    background: var(--mainColor);
+    position: relative;
+    cursor: pointer;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    display: none;
+}
+.nav-toggler span {
+    background: var(--whiteColor);
+    width: 30px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.nav-toggler span::before, .nav-toggler span::after {
+    content: '';
+    background: var(--whiteColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.nav-toggler.active span{
+    background: transparent;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.nav-toggler span::before {
+    transform: translateY(-8px);
+}
+.nav-toggler.active span::before{
+    transform: rotate(45deg);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.nav-toggler span::after{
+    transform: translateY(8px);
+}
+.nav-toggler.active span::after{
+    transform: rotate(-45deg);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+/*---------------------------
+header area ends here  
+---------------------------*/
+
+
+/*===========================
+1.4 banner area here
+===========================*/
+.banner {
+    background: var(--bgColor);
+    padding: 270px 0px 270px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.banner .vector,
+.i-am .vector,
+.ourService .vector,
+.life .vector,
+.creativeTeam .vector,
+.latestNews .vector,
+.ab-banner .vector{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner .vector img:nth-child(1) {
+    position: absolute;
+    top: calc(11%);
+    left: calc(12%);
+}
+.banner .vector img:nth-child(2) {
+    position: absolute;
+    left: calc(7%);
+    bottom: calc(13%);
+}
+.banner-content{}
+.banner-content h1 {
+    margin-bottom: 30px;
+    line-height: 70px;
+    letter-spacing: 0px;
+}
+.banner-content br{}
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.banner-content ul{}
+.banner-content ul li {
+    display: inline-block;
+}
+.banner-content ul li:last-child {
+    margin-left: 20px;
+}
+/* button  */
+a.btn-button {
+    font-size: 18px;
+    font-family: "tt-b";
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    padding: 20px 0px;
+    width: 190px;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+a.btn-color {
+    color: var(--whiteColor);
+    background: var(--mainColor);
+    border: 1px solid transparent;
+}
+a.btn-transparent {
+    color: var(--textColor);
+    border: 1px solid var(--textColor);
+}
+a.btn-transparent:hover {
+    background: var(--mainColor);
+    color: var(--whiteColor);
+    border: 1px solid transparent;
+}
+.banner-img {
+    position: absolute;
+    top: 50%;
+    left: calc(58%);
+    max-width: 100%;
+    transform: translateY(-50%);
+}
+/*---------------------------
+banner area ends here  
+---------------------------*/
+
+
+/*===========================
+1.5 company logo area here 
+===========================*/
+.company-logo {
+    padding: 120px 0px;
+}
+.company-logo-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.company-logo-content li{}
+.company-logo-content li a{
+    display: block;
+}
+.company-logo-content li a img{
+    max-width: 100%;
+}
+/*---------------------------
+company logo area ends here  
+---------------------------*/
+
+
+/*===========================
+1.6 i-am area here
+===========================*/
+.i-am {
+    position: relative;
+    padding-bottom: 120px;
+    overflow: hidden;
+}
+.i-am .vector img {
+    position: absolute;
+    bottom: calc(8%);
+    left: calc(90%);
+}
+.i-am-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 60px;
+}
+.i-am-content .img{
+    position: relative;
+}
+.i-am-content .img img:nth-child(1) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px -60px -60px;
+    z-index: 0;
+}
+.i-am-content .img img:nth-child(2) {
+    width: 100%;
+    position: relative;
+}
+.i-am-content .content{}
+.i-am-content .content h2 {
+    font-family: "tt-exb";
+    margin-bottom: 30px;
+}
+.i-am-content .content h2 br{}
+.i-am-content .content p {
+    font-size: 18px;
+    font-family: "tt-m";
+    margin-bottom: 30px;
+}
+/*---------------------------
+i-am area ends here
+---------------------------*/
+
+
+/*===========================
+1.7 ourService area here
+===========================*/
+.ourService {
+    padding: 0px 0px 120px;
+    position: relative;
+}
+.ourService .vector img {
+    position: absolute;
+    bottom: calc(18%);
+    left: calc(7%);
+}
+.ourService-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.ourService-title p {
+    font-size: 18px;
+    font-family: "tt-b";
+    text-transform: capitalize;
+}
+.ourService-title h2 {
+    margin-bottom: 0;
+}
+.ourService-title h2 br{}
+.ourService-feature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.ourService-content {
+    text-align: center;
+    padding: 47px 42px 47px;
+    box-shadow: 0 0 11px 0px var(--border);
+}
+.ourService-content:hover,
+.ourService-content:nth-child(2).active{
+    background: url("../images/patterns/exclusive-patterns.png") var(--mainColor);
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.ourService-content:hover h4,
+.ourService-content:hover p,
+.ourService-content:nth-child(2).active h4,
+.ourService-content:nth-child(2).active p{
+    color: var(--whiteColor);
+}
+.ourService-content:hover .content img,
+.ourService-content:nth-child(2).active .content img{
+    filter: brightness(100);
+}
+.ourService-content .img {}
+.ourService-content .img img{
+    max-width: 90px;
+    margin-bottom: 20px;
+}
+.ourService-content .content{}
+.ourService-content .content h4{
+    text-transform: capitalize;
+    margin-bottom: 24px;
+}
+.ourService-content .content p{
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.ourService-content .content img{}
+/*===========================
+ourService area ends here
+===========================*/
+
+
+/*===========================
+1.8 life area here
+===========================*/
+.life {
+    padding: 0px 0px 120px;
+    overflow: hidden;
+    position: relative;
+}
+.life .vector img {
+    position: absolute;
+    bottom: 0;
+    left: calc(90%);
+}
+.life-content {
+    margin-right: 80px;
+}
+.life-content h2 {
+    font-family: "tt-exb";
+    margin-bottom: 30px;
+}
+.life-content h2 br{}
+.life-content p {
+    font-family: "tt-m";
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.life-img{
+    position: relative;
+}
+.life-img img:nth-child(1){
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin: 0px -60px -60px 0px;
+}
+.life-img img:nth-child(2){
+    position: relative;
+    width: 100%;
+}
+/*===========================
+life area ends here
+===========================*/
+
+
+/*===========================
+1.9 ourPort area here
+===========================*/
+.ourPort {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 90px;
+}
+.ourPort .patterns {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.ourPort .patterns img:first-child {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    max-width: 100%;
+}
+.ourPort .patterns img:last-child {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    max-width: 100%;
+}
+.ourPort-gallery{}
+.ourPort-gallery-menu {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.ourPort-gallery-menu li {
+    display: inline-block;
+    margin: 0px 5px 10px;
+}
+.ourPort-gallery-menu li a {
+    display: block;
+    text-transform: capitalize;
+    font-family: "tt-b";
+    font-size: 24px;
+    padding: 20px 0px;
+    width: 190px;
+    border-radius: 4px;
+}
+.ourPort-gallery-menu li a.active,
+.ourPort-gallery-menu li a:hover{
+    background: var(--mainColor);
+    color: var(--whiteColor);
+}
+.ourPort-item-thum {
+    position: relative;
+    margin-bottom: 30px;
+}
+.ourPort-item-thum.one {
+    height: 320px;
+}
+.ourPort-item-thum.two {
+    height: 410px;
+}
+.ourPort-item-thum.three {
+    height: 490px;
+}
+.ourPort-item-thum.four {
+    height: 480px;
+}
+.ourPort-item-thum.five {
+    height: 390px;
+}
+.ourPort-item-thum.six {
+    height: 310px;
+}
+.ourPort-item-thum img {
+    width: 100%;
+    height: 100%;
+}
+.ourPort-item-thum .active{}
+.ourPort-item-thum .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--mainColor);
+    transform: scale(0);
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.ourPort-item-thum .overlay i{
+    color: var(--whiteColor);
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+.ourPort-item-thum .overlay h4{
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    color: var(--whiteColor);
+
+}
+.ourPort-item-thum .active,
+.ourPort-item-thum:hover .overlay{
+    transform: scale(1);
+}
+/*===========================
+ourPort area ends here
+===========================*/
+
+
+/*===========================
+1.10 counterUp area here
+===========================*/
+.counterUp {
+    position: relative;
+    background: url("../images/patterns/fun-fact-vector.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    padding: 120px 0px;
+}
+.counterUp::before {
+    content: "";
+    position: absolute;
+    background: rgba(29,198,173, 90%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.counterUp-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.counterUp-content {
+    text-align: center;
+}
+.counterUp-content h1 {
+    color: var(--whiteColor);
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.counterUp-content h1 span.counter {
+    color: var(--whiteColor);
+}
+.counterUp-content h4 {
+    text-transform: capitalize;
+    color: var(--whiteColor);
+    margin-bottom: 0;
+}
+/*===========================
+counterUp area ends here
+===========================*/
+
+
+/*===========================
+1.11 creativeTeam area here
+===========================*/
+.creativeTeam {
+    padding: 120px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.creativeTeam .vector{}
+.creativeTeam .vector img {
+    position: absolute;
+    bottom: calc(18%);
+    left: calc(7%);
+}
+.creativeTeam-iteam {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.creativeTeam-iteams {
+    text-align: center;
+}
+.creativeTeam-iteams .img {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 36px;
+}
+.creativeTeam-iteams .img img {
+    max-width: 100%;
+}
+.creativeTeam-iteams .img a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background: var(--redLight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--whiteColor);
+    margin: 0px -10px -10px 0px;
+}
+.creativeTeam-iteams .img a:hover i{
+    transform: rotate(360deg);
+}
+.creativeTeam-iteams .img a i{}
+.creativeTeam-iteams .content {
+    padding: 30px 15px;
+    border: 1px solid transparent;
+    background: #f4f4f4;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.creativeTeam-iteams .content.active,
+.creativeTeam-iteams .content:hover {
+    border: 1px solid var(--mainColor);
+}
+.creativeTeam-iteams .content h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+.creativeTeam-iteams .content a {
+    font-size: 18px;
+    font-family: "tt-b";
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.creativeTeam-iteams .content a:hover{
+    color: var(--mainColor);
+}
+.creativeTeam-iteams .content p {
+    margin-bottom: 0;
+}
+/*===========================
+creativeTeam area ends here
+===========================*/
+
+
+/*===========================
+1.12 latestNews area here
+===========================*/
+.latestNews {
+    padding-bottom: 120px;
+    position: relative;
+    overflow: hidden;
+}
+.latestNews .vector{}
+.latestNews .vector img {
+    position: absolute;
+    bottom: calc(24%);
+    left: calc(90%);
+}
+.latestNews-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.latestNews-item{}
+.latestNews-item .img {
+    margin-bottom: 30px;
+}
+.latestNews-item .img img {
+    width: 100%;
+}
+.latestNews-item .content{}
+.latestNews-item .content span {
+    margin-bottom: 16px;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.latestNews-item .content h4 {
+    margin-bottom: 16px;
+}
+.latestNews-item .content h4 a {
+    display: block;
+    font-size: 20px;
+}
+.latestNews-item .content h4 a:hover{
+    color: var(--mainColor);
+}
+.latestNews-item .content p {
+    margin-bottom: 20px;
+}
+.latestNews-item .content p br{}
+.latestNews-item .content a {
+    display: inline-block;
+}
+.latestNews-item .content a img {
+    display: block;
+    max-width: 100%;
+}
+/*===========================
+latestNews area here
+===========================*/
+
+
+/*===========================
+1.13 footer area here
+===========================*/
+.footer {
+    position: relative;
+    background: url("../images/home/footerBanner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0px;
+    z-index: 1;
+}
+.footer-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.footer-widget{}
+.footer-content li{}
+.footer-content li h4{
+    color: var(--whiteColor);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.footer-content li a{
+    color: var(--whiteColor);
+    font-size: 20px;
+    font-family: "tt-r";
+    display: block;
+    margin-bottom: 8px;
+}
+.footer-content li a:hover{
+    color: var(--mainColor);
+}
+.footer-social {
+    margin-top: 20px;
+}
+.footer-social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-social li a {
+    display: inline-block;
+}
+.footer-social li a i {
+    color: var(--whiteColor);
+    font-size: 20px;
+    display: block;
+}
+.footer-social li a i:hover{
+    color: var(--mainColor);
+}
+.footer-widget .logo {
+    margin-bottom: 20px;
+}
+.footer-widget .logo a {
+    display: inline-block;
+}
+.footer-widget .logo a img{}
+.footer-widget .content{}
+.footer-widget .content h4 {
+    margin-bottom: 20px;
+}
+.footer-widget .content h4 a {
+    color: var(--whiteColor);
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+}
+.footer-widget .content h4 a:hover{
+    color: var(--mainColor);
+}
+.footer-widget .content p {
+    color: var(--whiteColor);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-widget form {
+    position: relative;
+}
+.footer-widget form input {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: "tt-r";
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px 60px 20px 20px;
+    background-color: #1d2332;
+    color: var(--whiteColor);
+}
+.footer-widget form input::placeholder{
+    color: #73767f;
+}
+.footer-widget form a {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer-widget form a i {
+    color: #73767f;
+    font-size: 20px;
+}
+.footer-widget form a i:hover {
+    color: var(--mainColor);
+}
+/*===========================
+footer area ends here
+===========================*/
+
+
+/*===========================
+1.14 copyRight area here
+===========================*/
+.copyRight{
+    background: #040813;
+}
+.copyRight-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyRight-content p {
+    font-size: 16px;
+    font-family: "tt-m";
+    color: var(--whiteColor);
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 16px 0px;
+}
+.copyRight-content p span {
+    color: var(--mainColor);
+    font-size: 16px;
+    margin-left: 4px;
+    font-family: "tt-m";
+}
+/*===========================
+copyRight area ends here
+===========================*/
+
+
+
+/*########################
+2. about us ---------------[########################]
+########################*/
+
+/*===========================
+2.1 about banner area here  
+===========================*/
+.ab-banner {
+    background: var(--bgColor);
+    padding: 200px 0px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.ab-banner .vector{
+    position: absolute;
+}
+.ab-banner .vector img{
+    position: absolute;
+}
+.ab-banner .vector img:nth-child(1) {
+    bottom: calc(13%);
+    left: calc(87%);
+}
+.ab-banner .vector img:nth-child(2) {
+    top: calc(13%);
+    left: calc(63%);
+}
+.ab-banner .vector img:nth-child(3) {
+    bottom: calc(13%);
+    left: calc(20%);
+}
+.ab-banner .vector img:nth-child(4) {
+    left: calc(7%);
+    top: calc(13%);
+}
+.ab-bannerItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ab-bannerItem h2 {
+    font-size: 72px;
+    text-transform: capitalize;
+    opacity: .1;
+    margin-bottom: 0px;
+    line-height: 70px;
+}
+.ab-bannerItem ul {
+    position: absolute;
+}
+.ab-bannerItem ul li {
+    display: inline-block;
+}
+.ab-bannerItem ul li a {
+    display: block;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.ab-bannerItem ul li a:hover{
+    color: var(--mainColor);
+}
+.ab-bannerItem ul li span{}
+/*===========================
+about banner area ends here
+===========================*/
+
+
+/*===========================
+2.2 creativeThink area here  
+===========================*/
+.creativeThink {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.creativeThink .patterns {
+    position: absolute;
+    left: calc(53%);
+    width: 650px;
+    height: 650px;
+}
+.creativeThink .patterns img {
+    width: 100%;
+    height: 100%;
+}
+.creativeThink-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    align-items: center;
+}
+.creativeThink-item .patterns img{}
+.creativeThink-item .content h2 {
+    margin-bottom: 30px;
+}
+.creativeThink-item .content h2 br{}
+.creativeThink-item .content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.creativeThink-item .content p:last-child {
+    margin-bottom: 0px;
+}
+.creativeThink-item .content p a {
+    font-size: 18px;
+    font-family: "tt-r";
+    color: var(--mainColor);
+    text-decoration: underline;
+}
+.creativeThink-item .content p a:hover{}
+.creativeThink-item .images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.creativeThink-item .images img {
+    width: 100%;
+}
+.creativeThink-item .video {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -30px;
+}
+.creativeThink-item .video a {
+    width: 60px;
+    height: 60px;
+    background: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.creativeThink-item .video a i {
+    color: var(--whiteColor);
+}
+/*===========================
+creativeThink area ends here
+===========================*/
+
+
+/*===========================
+2.3 testmonial area here
+===========================*/
+.testmonial {
+    padding-bottom: 120px;
+    overflow: hidden;
+}
+.testmonial-items {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.testmonial-items .img {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 60px;
+}
+.testmonial-items .img img{}
+.testmonial-items .img img:nth-child(1) {
+    z-index: 1;
+}
+.testmonial-items .img img:nth-child(2) {
+    position: absolute;
+    margin-bottom: -20px;
+}
+.testmonial-content {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    justify-content: flex-end;
+    border: 3px solid var(--mainColor);
+    padding: 40px 40px 40px 0px;
+}
+.testmonial-content h4 {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.testmonial-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.testmonial-content p br{}
+.testmonial-content img {
+    margin-left: 85%;
+    margin-bottom: -70px;
+}
+/*===========================
+testmonial area ends here
+===========================*/
+
+/*########################
+#theEndCSS########################
+########################*/

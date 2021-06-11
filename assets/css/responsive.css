@@ -1,0 +1,663 @@
+/*################################################### 
+#START
+
+
+RESPONSIVE DEVICE
+=============================
+=============================
+
+1. 1400px devices
+    #home-1400-------------------]
+        1.1-1400 banner area here
+        1.2-1400 ourService area here
+
+    #aboutUs-1400-------------------]
+        1.3-1400 creativeTeam area here
+
+2. 1200 xlarge devices
+    #home-1200-------------------]
+        2.1-1200 banner area here
+        2.2-1200 company logo area here
+        2.3-1200 i-am area here
+        2.4-1200 life area here
+        2.5-1200 ourPort area here
+        2.6-1200 counterUp area here
+        2.7-1200 creativeTeam area here
+        2.8-1200 latestNews area here
+
+    #aboutUs-1200-------------------]
+        2.9-1200 creativeTeam area here
+        2.10-1200 testmonial area here
+
+
+3. 992px large devices
+    #home-992-------------------]
+        3.1-992 header top area here
+        3.2-992 header area here
+        3.3-992 banner area here
+        3.4-992 i-am area here
+        3.5-992 ourService area here
+        3.6-992 counterUp area here
+        3.7-992 creativeTeam area here
+        3.8-992 latestNews area here
+        3.9-992 footer area here
+    #aboutUs-992-------------------]
+        3.10-992 creativeTeam area here
+        3.11-992 testmonial area here
+    
+
+4. 768px medium devices
+    #home-768-------------------]
+        4.1-768 banner area here
+        4.2-768 ourService area here
+        4.3-768 creativeTeam area here
+        4.4-768 latestNews area here
+
+5. 576px small devices
+    #home-576-------------------]
+        5.1-576 header area here
+        5.2-576 banner area here
+        5.3-576 company logo area here
+        5.4-576 i-am area here
+        5.5-576 ourService area here
+        5.6-576 life area here
+        5.7-576 counterUp area here
+        5.8-576 creativeTeam area here
+        5.9-576 footer area here
+    #aboutUs-576
+        5.10-576 about-banner area here
+        5.11-576 testmonial area here
+#theEND
+###################################################*/
+
+
+
+
+
+/*##############################
+Extra large: ---------
+1. 1400px devices
+##############################*/
+@media screen and (max-width: 1400px){
+    /* 
+    #home-1400-------------------]
+    */
+    /*********************** 
+    1.1-1400 banner area here
+    ***********************/
+    .banner {
+        padding: 150px 0px 150px;
+    }
+    .banner .vector img:nth-child(1) {
+        top: calc(7%);
+        left: calc(2%);
+    }
+    .banner .vector img:nth-child(2) {
+        bottom: calc(10%);
+        left: calc(4%);
+    }
+    .banner-content h1 {
+        margin-bottom: 30px;
+        line-height: 50px;
+        font-size: 45px;
+    }
+    .banner-content p {
+        margin-bottom: 30px;
+    }
+    .banner-img {
+        width: 480px;
+    }
+
+    /*********************** 
+    1.2-1400 ourService area here
+    ***********************/
+    .ourService-content {
+        padding: 47px 26px 47px;
+    }
+    .ourService .vector img,
+    .creativeTeam .vector img {
+        left: calc(4%);
+    }
+
+    /* 
+    #aboutUs-1400-------------------]
+    */
+    /*********************** 
+    1.3-1400 creativeTeam area here
+    ***********************/
+    .creativeThink .patterns {
+        width: auto;
+        height: auto;
+    }
+
+}
+
+
+/*############################## 
+Extra large: ---------
+2. 1200 xlarge devices
+##############################*/
+@media screen and (max-width: 1200px){
+    /* 
+    #home-1200-------------------]
+    */
+    /*********************** 
+    2.1-1200 banner area here
+    ***********************/
+    .banner {
+        padding: 130px 0px 130px;
+    }
+    .banner-content h1 {
+        margin-bottom: 20px;
+        line-height: 46px;
+        font-size: 40px;
+    }
+    
+    /*********************** 
+    2.2-1200 company logo area here
+    ***********************/
+    .company-logo {
+        padding: 120px 0px 90px;
+    }
+    .company-logo-content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .company-logo-content li {
+        margin: 0px 20px 30px;
+    }
+    
+    /*********************** 
+    2.3-1200 i-am area here
+    ***********************/
+    .i-am-content .content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 34px;
+    }
+    .i-am-content .content p {
+        margin-bottom: 20px;
+    }
+
+    /*********************** 
+    2.4-1200 life area here
+    ***********************/
+    .life-content {
+        margin-right: 0px;
+        margin-top: 80px;
+    }
+    .life-content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 34px;
+    }
+    .life-content h2 br{
+        display: none;
+    }
+
+    /*********************** 
+    2.5-1200 ourPort area here
+    ***********************/
+    .ourPort-item-thum.one,
+    .ourPort-item-thum.two,
+    .ourPort-item-thum.three,
+    .ourPort-item-thum.four,
+    .ourPort-item-thum.five,
+    .ourPort-item-thum.six{
+        height: 100%;
+    }
+
+    /*********************** 
+    2.6-1200 counterUp area here
+    ***********************/
+    .counterUp-item {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    
+    /*********************** 
+    2.7-1200 creativeTeam area here
+    ***********************/
+    .creativeTeam-iteams .content p br{
+        display: none;
+    }
+
+    /*********************** 
+    2.8-1200 latestNews area here
+    ***********************/
+    .latestNews-item .content p br {
+        display: none;
+    }
+
+    /* 
+    #aboutUs-1200-------------------]
+    */
+    /*********************** 
+    2.9-1200 creativeTeam area here
+    ***********************/
+    .creativeThink-item .content h2 br {
+        display: none;
+    }
+
+    /*********************** 
+    2.10-1200 testmonial area here
+    ***********************/
+    .testmonial-items {
+        display: block;
+    }
+    .testmonial-items .img {
+        margin-left: 0;
+    }
+    .testmonial-content {
+        position: sticky;
+        display: block;
+        padding: 100px 40px 40px;
+        margin-top: -60px;
+    }
+    .testmonial-content img {
+        display: block;
+        margin: 0px 0px -70px 0px;
+        float: right;
+    }
+
+}
+
+
+/*############################## 
+large layout:  --------- 
+3. 992px large devices
+##############################*/
+@media screen and (max-width: 992px){
+    /* 
+    #home-992-------------------]
+    */
+    /*********************** 
+    3.1-992 header top area here
+    ***********************/
+    .header-top {
+        padding: 13px 0px;
+    }
+    .header-top-contact {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    ul.ht-contact {
+        text-align: center;
+    }
+    ul.ht-contact li a span {
+        font-size: 14px;
+    }
+    ul.ht-contact li {
+        margin-right: 0px;
+        margin: 0px 20px 10px;
+    }
+    ul.ht-social {
+        margin-bottom: 10px;
+    }
+    ul.ht-social li {
+        margin-left: 0px;
+        margin: 0px 15px;
+    }
+    ul.ht-social li a i {
+        font-size: 14px;
+    }
+
+    /*********************** 
+    3.2-992 header area here
+    ***********************/
+    .header .nav {
+        position: fixed;
+        top: 0;
+        left: -200%;
+        line-height: 60px;
+        background: var(--mainColor);
+        width: max-content;
+        padding: 120px 20px 40px;
+        display: block;
+        transition: all .6s ease;
+        z-index: 100;
+    }
+    .header .nav.active {
+        left: 0;
+    }
+    .header .nav > li > a:hover{
+        color: var(--white);
+    }
+    .header .nav > li {
+        text-align: center;
+    }
+    .sub-menu {
+        position: relative;
+        background: var(--white);
+    }
+    .sub-menu li a {
+        color: var(--main-color);
+    }
+    .close-nav {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        line-height: 0;
+        margin: 0 !important;
+    }
+    .nav-toggler {
+        display: block;
+    }
+
+    /*********************** 
+    3.3-992 banner area here
+    ***********************/
+    .banner-img {
+        display: none;
+    }
+
+    /*********************** 
+    3.4-992 i-am area here
+    ***********************/
+    .i-am-content {
+        grid-template-columns: auto;
+        grid-gap: 80px;
+    }
+
+    /*********************** 
+    3.5-992 ourService area here
+    ***********************/
+    .ourService-feature {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*********************** 
+    3.6-992 counterUp area here
+    ***********************/
+    .counterUp-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*********************** 
+    3.7-992 creativeTeam area here
+    ***********************/
+    .creativeTeam-iteam {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .creativeTeam-iteams .content p br{
+        display: block;
+    }
+
+    /*********************** 
+    3.8-992 latestNews area here
+    ***********************/
+    .latestNews-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*********************** 
+    3.9-992 footer area here
+    ***********************/
+    .footer-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 
+    #aboutUs-992-------------------]
+    */
+    /*********************** 
+    3.10-992 creativeTeam area here
+    ***********************/
+    .creativeThink-item {
+        grid-template-columns: auto;
+        grid-gap: 80px;
+    }
+    .creativeThink .patterns {
+        display: none;
+    }
+    .creativeThink-item .images {
+        order: 1;
+    }
+    .creativeThink-item .content {
+        order: 2;
+    }
+
+    /*********************** 
+    3.11-992 testmonial area here
+    ***********************/
+    .testmonial-content p br {
+        display: none;
+    }
+}
+
+
+/*############################## 
+Medium Layout: ---------
+4. 768px medium devices
+##############################*/
+@media screen and (max-width: 768px){
+    /* 
+    #home-768-------------------]
+    */
+    /*********************** 
+    4.1-768 banner area here
+    ***********************/
+    .banner {
+        padding: 120px 0px 120px;
+    }
+    .banner-content h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    /*********************** 
+    4.2-768 ourService area here
+    ***********************/
+    .ourService-title h2 br{
+        display: none;
+    }
+    .ourService-feature {
+        grid-template-columns: auto;
+    }
+
+    /*********************** 
+    4.3-768 creativeTeam area here
+    ***********************/
+    .creativeTeam-iteam {
+        grid-template-columns: auto;
+    }
+
+    /*********************** 
+    4.4-768 latestNews area here
+    ***********************/
+    .latestNews-items,
+    .footer-items {
+        grid-template-columns: auto;
+    }
+
+}
+
+
+/*############################## 
+Small Layout: ---------
+5. 576px small devices
+##############################*/
+@media screen and (max-width: 576px){
+    /* 
+    #home-576-------------------]
+    */
+    /*********************** 
+    5.1-576 header area here
+    ***********************/
+    .header .nav {
+        width: 100%;
+    }
+    .sub-menu {
+        width: 100%;
+    }
+
+    /*********************** 
+    5.2-576 banner area here
+    ***********************/
+    .banner-content h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .banner-content br {
+        display: none;
+    }
+    .banner-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .banner-content ul li {
+        display: block;
+    }
+    .banner-content ul li:last-child {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+    /*********************** 
+    5.3-576 company logo area here
+    ***********************/
+    .company-logo {
+        padding: 70px 0px 40px;
+    }
+
+    /*********************** 
+    5.4-576 i-am area here
+    ***********************/
+    .i-am {
+        padding-bottom: 70px;
+    }
+    .i-am-content .content h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .i-am-content .content h2 br {
+        display: none;
+    }
+    .i-am-content .content p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /*********************** 
+    5.5-576 ourService area here
+    ***********************/
+    .ourService-title h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .ourService-content {
+        padding: 47px 20px 47px;
+    }
+    .ourService-content .content h4 {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .ourService-content .content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /*********************** 
+    5.6-576 life area here
+    ***********************/
+    .life-content h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .life-content p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    /*********************** 
+    5.7-576 counterUp area here
+    ***********************/
+    .counterUp-item {
+        grid-template-columns: auto;
+    }
+
+    /*********************** 
+    5.8-576 creativeTeam area here
+    ***********************/
+    .creativeTeam-iteams .content p br{
+        display: none;
+    }
+    .creativeTeam-iteams .content h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .creativeTeam-iteams .content a {
+        font-size: 16px;
+    }
+    .creativeTeam-iteams .content p {
+        font-size: 16px;
+    }
+
+    /*********************** 
+    5.9-576 footer area here
+    ***********************/
+    .footer-content li h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .footer-content li a {
+        font-size: 16px;
+    }
+    .footer-widget .content h4 a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .footer-widget .content p {
+        font-size: 16px;
+    }
+
+    /* 
+    #aboutUs-576-------------------]
+    */
+    /*********************** 
+    5.10-576 about-banner area here
+    ***********************/
+    .ab-bannerItem h2 {
+        font-size: 50px;
+    }
+    .ab-bannerItem ul li a {
+        font-size: 18px;
+    }
+
+    /*********************** 
+    5.11-576 testmonial area here
+    ***********************/
+    .creativeThink-item .content h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .creativeThink-item .content p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    /*********************** 
+    5.12-576 testmonial area here
+    ***********************/
+    .testmonial-items .img img:nth-child(1) {
+        width: 90%;
+    }
+    .testmonial-items .img img:nth-child(2) {
+        width: 100%;
+    }
+    .testmonial-content {
+        padding: 100px 20px 40px;
+    }
+    .testmonial-content h4 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .testmonial-content p {
+        font-size: 16px;
+    }
+}
+/*########################
+#theEndRESPONSIVE########################
+########################*/

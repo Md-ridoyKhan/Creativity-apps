@@ -1,0 +1,153 @@
+/*
+Table Of Contents
+=========================
+--------- Default Typography
+--------- Custom Typography
+=========================
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+/*
+font-family: 'TTNorms';
+*/
+@font-face {
+    font-family: tt-r;
+    src: url("../fontFamily/TTNorms-Regular.otf");
+}
+@font-face {
+    font-family: tt-m;
+    src: url("../fontFamily/TTNorms-Medium.otf");
+}
+@font-face {
+    font-family: tt-b;
+    src: url("../fontFamily/TTNorms-Bold.otf");
+}
+@font-face {
+    font-family: tt-exb;
+    src: url("../fontFamily/TTNorms-ExtraBold.otf");
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "tt-b";
+    color: var(--textColor);
+}
+h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-family: "tt-exb";
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 36px;
+    line-height: 40px;
+}
+h3 {
+    font-size: 30px;
+    line-height: 30px;
+}
+h4 {
+    font-size: 24px;
+    line-height: 28px;
+}
+h5 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+p {
+    color: var(--textColor);
+    font-size: 16px;
+    font-family: "tt-r";
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+p img {
+    margin: 0;
+}
+span {
+    color: var(--textColor);
+    font-family: "tt-r";
+}
+a{
+    font-size: 18px;
+    font-family: "tt-b";
+    color: var(--textColor);
+    text-decoration: none; 
+}
+ul {
+    margin-bottom: 0;
+    padding-left: 0px;
+    list-style-type: none;
+}
+a,
+i,
+span{
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+
+/*
+--------------------------
+- Custom Typography
+--------------------------
+*/
+
+
+
+/* button focus and outline  */
+a.btn:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+/* Your Custom Typography. */
+
+
+
+/* color code */
+
+:root{
+    --mainColor: #1dc6ad;
+    --bgColor: #f7fdff;
+    --mainColorRGB: RGB(29,198,173);
+    --textColor: #282f41;
+    /* --border: #b4bbc2; */
+    --border: #e1e1e1;
+    --whiteColor: #ffffff;
+    --linkColor: #ddddd; 
+    --redLight: #ec0101;
+    --footerBG: #040813;
+    --shadowMain:  0 0 15px rgb(29 198 173 / 50%);
+    --shadowBottom:  0 1px 15px rgb(29 198 173 / 50%);
+}
+
+
+
+
+
+
+
+
+
+
