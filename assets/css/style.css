@@ -36,7 +36,8 @@ CSS INDEX
     2.2 creativeThink area here
     2.3 testmonial area here
 
-3. header area here
+3. services
+    3.1 services area here
 
 
 ###########################################**/
@@ -363,9 +364,11 @@ header area ends here
     bottom: calc(13%);
 }
 .banner-content{}
-.banner-content h1 {
-    margin-bottom: 30px;
+.banner-content h2 {
+    font-size: 60px;
     line-height: 70px;
+    font-family: "tt-exb";
+    margin-bottom: 30px;
     letter-spacing: 0px;
 }
 .banner-content br{}
@@ -948,11 +951,11 @@ latestNews area here
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-.footer-content li a{
+.footer-content li a {
     color: var(--whiteColor);
     font-size: 20px;
     font-family: "tt-r";
-    display: block;
+    display: inline-block;
     margin-bottom: 8px;
 }
 .footer-content li a:hover{
@@ -1266,6 +1269,92 @@ creativeThink area ends here
 /*===========================
 testmonial area ends here
 ===========================*/
+
+
+/*########################
+3. services ---------------[########################]
+########################*/
+
+/*===========================
+3.1 services area here 
+===========================*/
+.services {
+    padding: 120px 0px;
+    overflow: hidden;
+}
+.services-single {
+    margin-bottom: 120px;
+    position: relative;
+}
+.services-single:last-child {
+    margin-bottom: 0px;
+}
+.services-single .vector{
+    display: none;
+}
+.services-single1 .vector{}
+.services-single1 .vector img{}
+.services-single2 .vector{}
+.services-single2 .vector img{}
+.services-single3 .vector{}
+.services-single3 .vector img{}
+.services-single4 .vector{}
+.services-single4 .vector img{}
+.services-single5 .vector{}
+.services-single5 .vector img{}
+.services-single6 .vector{}
+.services-single6 .vector img{}
+.services-content{}
+.services-content.margin {
+    margin-left: 80px;
+}
+.services-content h2 {
+    margin-bottom: 30px;
+}
+.services-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.services-content p br{}
+.services-number {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.services-number li {}
+.services-number li div {
+    width: 120px;
+    height: 4px;
+    background: var(--textColor);
+}
+.services-number li span {
+    font-size: 36px;
+    font-family: "tt-b";
+    margin-left: 5px;
+}
+.services-img {
+    position: relative;
+}
+.services-img img:nth-child(1) {
+    width: 100%;
+}
+.services-img img:nth-child(2){
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.services-img img.imgRight{
+    right: 0;
+    margin: 0px -30px -30px 0px;
+}
+.services-img img.imgLeft{
+    left: 0;
+    margin: 0px 0px -30px -30px;
+}
+/*===========================
+services area ends here
+===========================*/
+
 
 /*########################
 #theEndCSS########################
