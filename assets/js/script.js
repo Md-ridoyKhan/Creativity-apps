@@ -31,7 +31,7 @@ $(document).ready(function(){
         time: 1000
     }); 
     
-    // // init Isotope
+    // init Isotope
     var $grid = $('.ourPort-item').isotope({
         itemSelector: '.ourPort-items',
         percentPosition: true,
@@ -44,6 +44,10 @@ $(document).ready(function(){
         $grid.isotope({ filter: filterValue });
     });
 
+    // magnific-popup 
+    $('.expandVideo').magnificPopup({
+        type: 'iframe'
+    });
 
 });
  

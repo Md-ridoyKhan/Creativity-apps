@@ -339,13 +339,14 @@ header area ends here
     overflow: hidden;
     z-index: 1;
 }
-.banner .vector,
+.banner .vectors,
 .i-am .vector,
 .ourService .vector,
 .life .vector,
 .creativeTeam .vector,
 .latestNews .vector,
-.ab-banner .vector{
+.ab-banner .vectors,
+.services-single .vector{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -353,15 +354,15 @@ header area ends here
     left: 0;
     z-index: -1;
 }
-.banner .vector img:nth-child(1) {
+.banner .vectors img:nth-child(1) {
     position: absolute;
     top: calc(11%);
-    left: calc(12%);
+    left: calc(20% - 150px);
 }
-.banner .vector img:nth-child(2) {
+.banner .vectors img:nth-child(2) {
     position: absolute;
-    left: calc(7%);
     bottom: calc(13%);
+    left: calc(13% - 150px);
 }
 .banner-content{}
 .banner-content h2 {
@@ -460,7 +461,7 @@ company logo area ends here
 .i-am .vector img {
     position: absolute;
     bottom: calc(8%);
-    left: calc(90%);
+    left: calc(84% + 150px);
 }
 .i-am-content {
     display: grid;
@@ -510,7 +511,7 @@ i-am area ends here
 .ourService .vector img {
     position: absolute;
     bottom: calc(18%);
-    left: calc(7%);
+    left: calc(13% - 150px);
 }
 .ourService-title {
     text-align: center;
@@ -585,7 +586,7 @@ ourService area ends here
 .life .vector img {
     position: absolute;
     bottom: 0;
-    left: calc(90%);
+    left: calc(84% + 150px);
 }
 .life-content {
     margin-right: 80px;
@@ -794,7 +795,7 @@ counterUp area ends here
 .creativeTeam .vector img {
     position: absolute;
     bottom: calc(18%);
-    left: calc(7%);
+    left: calc(13% - 150px);
 }
 .creativeTeam-iteam {
     display: grid;
@@ -881,7 +882,7 @@ creativeTeam area ends here
 .latestNews .vector img {
     position: absolute;
     bottom: calc(24%);
-    left: calc(90%);
+    left: calc(84% + 150px);
 }
 .latestNews-items{
     display: grid;
@@ -1089,25 +1090,25 @@ copyRight area ends here
     overflow: hidden;
     z-index: 1;
 }
-.ab-banner .vector{
+.ab-banner .vectors{
     position: absolute;
 }
-.ab-banner .vector img{
+.ab-banner .vectors img{
     position: absolute;
 }
-.ab-banner .vector img:nth-child(1) {
+.ab-banner .vectors img:nth-child(1) {
     bottom: calc(13%);
     left: calc(87%);
 }
-.ab-banner .vector img:nth-child(2) {
+.ab-banner .vectors img:nth-child(2) {
     top: calc(13%);
     left: calc(63%);
 }
-.ab-banner .vector img:nth-child(3) {
+.ab-banner .vectors img:nth-child(3) {
     bottom: calc(13%);
     left: calc(20%);
 }
-.ab-banner .vector img:nth-child(4) {
+.ab-banner .vectors img:nth-child(4) {
     left: calc(7%);
     top: calc(13%);
 }
@@ -1212,6 +1213,7 @@ about banner area ends here
 }
 .creativeThink-item .video a i {
     color: var(--whiteColor);
+    display: inline-block;
 }
 /*===========================
 creativeThink area ends here
@@ -1289,22 +1291,24 @@ testmonial area ends here
 .services-single:last-child {
     margin-bottom: 0px;
 }
-.services-single .vector{
-    display: none;
+.services-single1 .vector img{
+    position: absolute;
+    top: calc(13%);
+    left: calc(84% + 150px);
 }
-.services-single1 .vector{}
-.services-single1 .vector img{}
-.services-single2 .vector{}
-.services-single2 .vector img{}
-.services-single3 .vector{}
-.services-single3 .vector img{}
-.services-single4 .vector{}
-.services-single4 .vector img{}
-.services-single5 .vector{}
-.services-single5 .vector img{}
-.services-single6 .vector{}
-.services-single6 .vector img{}
-.services-content{}
+.services-single2 .vector img, 
+.services-single4 .vector img, 
+.services-single6 .vector img {
+    position: absolute;
+    bottom: calc(10%);
+    left: calc(13% - 150px);
+}
+.services-single3 .vector img, 
+.services-single5 .vector img {
+    position: absolute;
+    bottom: calc(10%);
+    left: calc(84% + 150px);
+}
 .services-content.margin {
     margin-left: 80px;
 }

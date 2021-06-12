@@ -45,8 +45,9 @@ RESPONSIVE DEVICE
         3.8-992 latestNews area here
         3.9-992 footer area here
     #aboutUs-992-------------------]
-        3.10-992 creativeTeam area here
-        3.11-992 testmonial area here
+        3.10-992 about-banner area here
+        3.11-992 creativeTeam area here
+        3.12-992 testmonial area here
     
 
 4. 768px medium devices
@@ -101,13 +102,13 @@ Extra large: ---------
     .banner {
         padding: 150px 0px 150px;
     }
-    .banner .vector img:nth-child(1) {
+    .banner .vectors img:nth-child(1) {
         top: calc(7%);
         left: calc(2%);
     }
-    .banner .vector img:nth-child(2) {
+    .banner .vectors img:nth-child(2) {
         bottom: calc(10%);
-        left: calc(4%);
+        left: calc(2%);
     }
     .banner-content h2 {
         line-height: 50px;
@@ -128,7 +129,7 @@ Extra large: ---------
     }
     .ourService .vector img,
     .creativeTeam .vector img {
-        left: calc(4%);
+        left: calc(2%);
     }
 
     /* 
@@ -148,9 +149,20 @@ Extra large: ---------
     /*********************** 
     1.4-1400 services area here
     ***********************/
-    .services-content.margin {
+    .services-single1 .vector img,
+    .services-single3 .vector img,
+    .services-single5 .vector img{
+        left: calc(95%);
+    }
+    .services-single2 .vector img,
+    .services-single4 .vector img,
+    .services-single6 .vector img{
+        left: calc(2%);
+    }
+    .services-content.margin{
         margin-left: 0px;
     }
+
 }
 
 
@@ -299,6 +311,10 @@ large layout:  ---------
 3. 992px large devices
 ##############################*/
 @media screen and (max-width: 992px){
+    /*All vector are display none */
+    .vector{
+        display: none;
+    }
     /* 
     #home-992-------------------]
     */
@@ -397,7 +413,24 @@ large layout:  ---------
     .ourService-feature {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    .ourService-content:nth-child(1){
+        order: 2;
+    }
+    .ourService-content:nth-child(2){
+        order: 1;
+    }
+    .ourService-content:nth-child(3){
+        order: 3;
+    }
+    .ourService-content:nth-child(4){
+        order: 4;
+    }
+    .ourService-content:nth-child(5){
+        order: 5;
+    }
+    .ourService-content:nth-child(6){
+        order: 6;
+    }
     /*********************** 
     3.6-992 counterUp area here
     ***********************/
@@ -410,6 +443,15 @@ large layout:  ---------
     ***********************/
     .creativeTeam-iteam {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .creativeTeam-iteams:nth-child(1){
+        order: 2;
+    }
+    .creativeTeam-iteams:nth-child(2){
+        order: 1;
+    }
+    .creativeTeam-iteams:nth-child(3){
+        order: 3;
     }
     .creativeTeam-iteams .content p br{
         display: block;
@@ -433,7 +475,14 @@ large layout:  ---------
     #aboutUs-992-------------------]
     */
     /*********************** 
-    3.10-992 creativeTeam area here
+    3.10-992 about-banner area here
+    ***********************/
+    .ab-banner .vectors img:nth-child(1) {
+        left: calc(70%);
+    }
+
+    /*********************** 
+    3.11-992 creativeTeam area here
     ***********************/
     .creativeThink-item {
         grid-template-columns: auto;
@@ -450,7 +499,7 @@ large layout:  ---------
     }
 
     /*********************** 
-    3.11-992 testmonial area here
+    3.12-992 testmonial area here
     ***********************/
     .testmonial-content p br {
         display: none;
@@ -709,6 +758,9 @@ Small Layout: ---------
         font-size: 24px;
         line-height: 28px;
         margin-bottom: 20px;
+    }
+    .services-number li span {
+        font-size: 24px;
     }
 
 
