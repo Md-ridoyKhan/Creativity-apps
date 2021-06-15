@@ -77,6 +77,8 @@ RESPONSIVE DEVICE
         5.12-576 testmonial area here
     #services-576-------------------]
         5.13-576 services area here
+    #blogHome-576-------------------]
+        5.14-576 blog-portfolio area here
 
 
 
@@ -151,12 +153,18 @@ Extra large: ---------
     ***********************/
     .services-single1 .vector img,
     .services-single3 .vector img,
-    .services-single5 .vector img{
+    .services-single5 .vector img,
+    .portfolio .vector img:nth-child(2),
+    .blog-port .vector img:nth-child(2),
+    .blog-port .vector img:nth-child(3){
         left: calc(95%);
     }
     .services-single2 .vector img,
     .services-single4 .vector img,
-    .services-single6 .vector img{
+    .services-single6 .vector img,
+    .portfolio .vector img:nth-child(1),
+    .portfolio .vector img:nth-child(3),
+    .blog-port .vector img:nth-child(1){
         left: calc(2%);
     }
     .services-content.margin{
@@ -444,7 +452,8 @@ large layout:  ---------
     .creativeTeam-iteam {
         grid-template-columns: repeat(2, 1fr);
     }
-    .creativeTeam-iteams:nth-child(1){
+    .creativeTeam-iteams:nth-child(1),
+    .portfolio-items.orders{
         order: 2;
     }
     .creativeTeam-iteams:nth-child(2){
@@ -494,7 +503,8 @@ large layout:  ---------
     .creativeThink-item .images {
         order: 1;
     }
-    .creativeThink-item .content {
+    .creativeThink-item .content,
+    .blog-port-order{
         order: 2;
     }
 
@@ -709,7 +719,8 @@ Small Layout: ---------
     5.10-576 about-banner area here
     ***********************/
     .ab-bannerItem h2 {
-        font-size: 50px;
+        font-size: 40px;
+        line-height: 55px;
     }
     .ab-bannerItem ul li a {
         font-size: 18px;
@@ -763,6 +774,17 @@ Small Layout: ---------
         font-size: 24px;
     }
 
+    /* 
+    #blogHome-576-------------------]
+    */
+    /*********************** 
+    5.14-576 blog-portfolio area here
+    ***********************/
+    .blog-port-item .overlay h4 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
 
 }
 /*########################

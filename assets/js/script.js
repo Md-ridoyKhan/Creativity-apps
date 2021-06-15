@@ -2,21 +2,19 @@ const navToggle = document.querySelector(".nav-toggler");
 const header = document.querySelector("header");
 const nav = document.querySelector(".nav");
 const closes = document.querySelector(".close-nav");
-
-// navigation menu 
-navToggle.onclick = ()=>{
+navToggle.onclick = function (){
     navToggle.classList.toggle("active");
     nav.classList.toggle("active");
-}
-closes.onclick = ()=>{
+};
+closes.onclick = function (){
     navToggle.classList.remove("active");
     nav.classList.remove("active");
-}
-window.onscroll = ()=>{
+};
+window.onscroll = function (){
     this.scrollY > 20 ?
-    header.classList.add("active"):
-    header.classList.remove("active");
-}
+    header.classList.add('active'):
+    header.classList.remove('active');
+};
 
 // jquery 
 $(document).ready(function(){
@@ -32,21 +30,29 @@ $(document).ready(function(){
     }); 
     
     // init Isotope
-    var $grid = $('.ourPort-item').isotope({
-        itemSelector: '.ourPort-items',
-        percentPosition: true,
-        masonry: {
-        columnWidth: '.ourPort-items'
-        }
-    });
+    // ourport area here 
+    var $grids = $('.ourPort-item').isotope({
+        // options
+        });
     $('.ourPort-gallery-menu').on( 'click', 'li', function() {
         var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
+        $grids.isotope({ filter: filterValue });
     });
 
     // magnific-popup 
     $('.expandVideo').magnificPopup({
         type: 'iframe'
+    });
+
+    // portfolio area here
+    // init Isotope
+    var $grid = $('.portfolio-content').isotope({
+    // options
+    });
+    // filter items on button click
+    $('.portfolio-nav').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
     });
 
 });

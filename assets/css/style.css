@@ -39,6 +39,12 @@ CSS INDEX
 3. services
     3.1 services area here
 
+4. portfolio
+    4.1 portfolio area here
+
+5. blogHome
+    5.1 blogHome area here
+
 
 ###########################################**/
 
@@ -346,7 +352,9 @@ header area ends here
 .creativeTeam .vector,
 .latestNews .vector,
 .ab-banner .vectors,
-.services-single .vector{
+.services-single .vector,
+.portfolio .vector,
+.blog-port .vector{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -551,8 +559,8 @@ i-am area ends here
 .ourService-content:nth-child(2).active p{
     color: var(--whiteColor);
 }
-.ourService-content:hover .content img,
-.ourService-content:nth-child(2).active .content img{
+.ourService-content:hover .content a img,
+.ourService-content:nth-child(2).active .content a img{
     filter: brightness(100);
 }
 .ourService-content .img {}
@@ -569,7 +577,12 @@ i-am area ends here
     font-size: 18px;
     margin-bottom: 24px;
 }
-.ourService-content .content img{}
+.ourService-content .content a {
+    display: block;
+}
+.ourService-content .content a img {
+    max-width: 100%;
+}
 /*===========================
 ourService area ends here
 ===========================*/
@@ -628,7 +641,7 @@ life area ends here
 .ourPort {
     position: relative;
     overflow: hidden;
-    margin-bottom: 90px;
+    margin-bottom: 120px;
 }
 .ourPort .patterns {
     position: absolute;
@@ -649,15 +662,18 @@ life area ends here
     max-width: 100%;
 }
 .ourPort-gallery{}
-.ourPort-gallery-menu {
+.ourPort-gallery-menu,
+.portfolio-nav{
     text-align: center;
     margin-bottom: 80px;
 }
-.ourPort-gallery-menu li {
+.ourPort-gallery-menu li,
+.portfolio-nav li{
     display: inline-block;
     margin: 0px 5px 10px;
 }
-.ourPort-gallery-menu li a {
+.ourPort-gallery-menu li a,
+.portfolio-nav li a{
     display: block;
     text-transform: capitalize;
     font-family: "tt-b";
@@ -673,7 +689,6 @@ life area ends here
 }
 .ourPort-item-thum {
     position: relative;
-    margin-bottom: 30px;
 }
 .ourPort-item-thum.one {
     height: 320px;
@@ -696,6 +711,7 @@ life area ends here
 .ourPort-item-thum img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .ourPort-item-thum .active{}
 .ourPort-item-thum .overlay {
@@ -721,10 +737,22 @@ life area ends here
     font-size: 30px;
     margin-bottom: 14px;
 }
+.ourPort-item-thum .overlay a{
+    display: block;
+}
 .ourPort-item-thum .overlay h4{
     text-transform: capitalize;
     margin-bottom: 0px;
     color: var(--whiteColor);
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+
+}
+.ourPort-item-thum .overlay a h4:hover{
+    color: var(--textColor);
 
 }
 .ourPort-item-thum .active,
@@ -850,13 +878,21 @@ counterUp area ends here
     text-transform: capitalize;
     font-size: 30px;
     line-height: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.creativeTeam-iteams .content h2:hover {
+    color: var(--mainColor);
 }
 .creativeTeam-iteams .content a {
     font-size: 18px;
     font-family: "tt-b";
     text-transform: capitalize;
-    display: inline-block;
+    display: block;
     margin-bottom: 10px;
 }
 .creativeTeam-iteams .content a:hover{
@@ -1255,9 +1291,20 @@ creativeThink area ends here
     border: 3px solid var(--mainColor);
     padding: 40px 40px 40px 0px;
 }
+.testmonial-content a{
+    display: block;
+}
 .testmonial-content h4 {
     margin-bottom: 20px;
     text-transform: capitalize;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.testmonial-content h4:hover{
+    color: var(--mainColor);
 }
 .testmonial-content p {
     font-size: 18px;
@@ -1358,6 +1405,231 @@ testmonial area ends here
 /*===========================
 services area ends here
 ===========================*/
+
+
+
+/*########################
+4. portfolio ---------------[########################]
+########################*/
+
+/*===========================
+4.1 portfolio area here
+===========================*/
+.portfolio{
+    padding: 120px 0px;
+    position: relative;
+}
+.portfolio .vector{}
+.portfolio .vector img{}
+.portfolio .vector img:nth-child(1) {
+    position: absolute;
+    left: calc(13% - 150px);
+    top: calc(21% + 150px);
+}
+.portfolio .vector img:nth-child(2) {
+    position: absolute;
+    left: calc(84% + 150px);
+    top: calc(47% + 150px);
+}
+.portfolio .vector img:nth-child(3) {
+    position: absolute;
+    left: calc(13% - 150px);
+    bottom: calc(20% - 150px);
+}
+.portfolio-nav{}
+.portfolio-nav li a.active,
+.portfolio-nav li a:hover{
+    background: var(--mainColor);
+    color: var(--whiteColor);
+}
+.portfolio-content {
+    position: inherit !important;
+    height: 100% !important;
+    overflow: hidden;
+}
+.portfolio-items {
+    position: inherit !important;
+    left: inherit !important;
+    top: inherit !important;
+}
+.portfolio-item{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.portfolio-item .overlay{
+    position: absolute;
+    background: rgba(29,198,173, 0.8);
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    text-align: center;
+    padding: 20px 0px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.portfolio-item .overlay i {
+    font-size: 24px;
+    color: var(--whiteColor);
+    display: block;
+}
+.portfolio-item .overlay a {
+    display: inline-block;
+    margin-top: 10px;
+}
+.portfolio-item .overlay a:hover p {
+    color: var(--textColor);
+}
+.portfolio-item .overlay a p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: var(--whiteColor);
+    text-transform: capitalize;
+    font-family: "tt-b";
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.portfolio-item .overlay.active,
+.portfolio-item:hover .overlay{
+    bottom: 0;
+}
+.portfolio-next {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.portfolio-next li {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--textColor);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.portfolio-next li a {
+    font-size: 18px;
+    text-transform: capitalize;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-next li:last-child {
+    width: 100px;
+}
+.portfolio-next li:last-child.active a,
+.portfolio-next li:hover a{
+    color: var(--whiteColor);
+}
+.portfolio-next li:last-child.active,
+.portfolio-next li:hover{
+    background: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+/*===========================
+portfolio area ends here
+===========================*/
+
+
+/*########################
+5. blogHome ---------------[########################]
+########################*/
+
+/*===========================
+5.1 blogHome area here
+===========================*/
+.blog-port{
+    padding: 120px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.blog-port .vector{}
+.blog-port .vector img{}
+.blog-port .vector img:nth-child(1) {
+    position: absolute;
+    left: calc(13% - 150px);
+    top: calc(40% + 150px);
+}
+.blog-port .vector img:nth-child(2) {
+    position: absolute;
+    top: calc(13%);
+    left: calc(84% + 150px);
+}
+.blog-port .vector img:nth-child(3) {
+    position: absolute;
+    left: calc(84% + 150px);
+    bottom: calc(20% - 150px);
+}
+.blog-port-item {
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+.blog-port-item > img {
+    width: 100%;
+}
+.blog-port-item .overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    background: rgba(29,198,173, 0.8);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.blog-port-item .overlay h4 {
+    text-transform: capitalize;
+    color: var(--whiteColor);
+}
+.blog-port-item .overlay a {
+    display: inline-block;
+}
+.blog-port-item .overlay a img {
+    max-width: 100%;
+    filter: brightness(100);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.blog-port-item .overlay a img:hover {
+    transform: rotate(340deg);
+}
+.blog-port-item .overlay.active,
+.blog-port-item:hover .overlay{
+    bottom: 0;
+}
+/*===========================
+blogHome area here
+===========================*/
+
+
+
+
+
 
 
 /*########################
