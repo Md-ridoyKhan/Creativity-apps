@@ -48,6 +48,11 @@ RESPONSIVE DEVICE
         3.10-992 about-banner area here
         3.11-992 creativeTeam area here
         3.12-992 testmonial area here
+    #team-992-------------------]
+        3.13-992 team area here
+    #blogDetails-992-------------------]
+        3.14-992 blog-details area here
+
     
 
 4. 768px medium devices
@@ -79,6 +84,8 @@ RESPONSIVE DEVICE
         5.13-576 services area here
     #blogHome-576-------------------]
         5.14-576 blog-portfolio area here
+    #blogDetails-576-------------------]
+        5.15-576 blog-details area here
 
 
 
@@ -375,8 +382,12 @@ large layout:  ---------
     .header .nav.active {
         left: 0;
     }
-    .header .nav > li > a:hover{
-        color: var(--white);
+    .header .nav > li > a{
+        color: var(--whiteColor);
+    }
+    .header .nav li a:hover {
+        color: var(--textColor);
+        text-decoration: underline;
     }
     .header .nav > li {
         text-align: center;
@@ -386,7 +397,7 @@ large layout:  ---------
         background: var(--white);
     }
     .sub-menu li a {
-        color: var(--main-color);
+        color: var(--whiteColor);
     }
     .close-nav {
         display: block;
@@ -514,6 +525,44 @@ large layout:  ---------
     .testmonial-content p br {
         display: none;
     }
+
+    /* 
+    #team-992-------------------]
+    */
+    /*********************** 
+    3.13-992 team area here
+    ***********************/
+    .teamArea-iteams:nth-child(1){
+        order: 2 !important;
+    }
+    .teamArea-iteams:nth-child(2){
+        order: 1 !important;
+    }
+    .teamArea-iteams:nth-child(3){
+        order: 3 !important;
+    }
+    .teamArea-iteams:nth-child(4){
+        order: 4 !important;
+    }
+    .teamArea-iteams:nth-child(5){
+        order: 5 !important;
+    }
+    .teamArea-iteams:nth-child(6){
+        order: 6 !important;
+    }
+
+    /* 
+    #blogDetails-992-------------------]
+    */
+    /*********************** 
+    3.14-992 blog-details area here
+    ***********************/
+    .blog-details-left {
+        margin-bottom: 80px;
+    }
+
+
+
 }
 
 
@@ -557,7 +606,8 @@ Medium Layout: ---------
     4.4-768 latestNews area here
     ***********************/
     .latestNews-items,
-    .footer-items {
+    .footer-items,
+    .bdlf-group:nth-child(1) {
         grid-template-columns: auto;
     }
 
@@ -570,6 +620,7 @@ Medium Layout: ---------
     .services-img {
         margin-bottom: 60px;
     }
+
 }
 
 
@@ -786,6 +837,34 @@ Small Layout: ---------
         margin-bottom: 10px;
     }
 
+    /* 
+    #blogDetails-576-------------------]
+    */
+    /*********************** 
+    5.15-576 blog-details area here
+    ***********************/
+    .bdlp-content h4 {
+        font-size: 22px;
+    }
+    .bdlp-content p {
+        font-size: 16px;
+    }
+    .blog-details-left-social {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bdls-tag {
+        margin-bottom: 20px;
+    }
+    .bdls-social li {
+        margin-right: 10px;
+    }
+    .bdll-title {
+        font-size: 22px;
+    }
+    .bdll-para {
+        font-size: 16px;
+    }
 }
 /*########################
 #theEndRESPONSIVE########################

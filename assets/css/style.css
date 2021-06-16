@@ -42,8 +42,15 @@ CSS INDEX
 4. portfolio
     4.1 portfolio area here
 
-5. blogHome
-    5.1 blogHome area here
+5. team
+    5.1 team area here
+
+6. blogHome
+    6.1 blogHome area here
+
+7. blogDetails
+    7.1 blog-details area here
+
 
 
 ###########################################**/
@@ -578,10 +585,18 @@ i-am area ends here
     margin-bottom: 24px;
 }
 .ourService-content .content a {
-    display: block;
+    display: inline-block;
 }
 .ourService-content .content a img {
     max-width: 100%;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.ourService-content .content a img:hover {
+    transform: rotate(340deg);
 }
 /*===========================
 ourService area ends here
@@ -752,8 +767,7 @@ life area ends here
 
 }
 .ourPort-item-thum .overlay a h4:hover{
-    color: var(--textColor);
-
+    text-decoration: underline;
 }
 .ourPort-item-thum .active,
 .ourPort-item-thum:hover .overlay{
@@ -1488,7 +1502,7 @@ services area ends here
     margin-top: 10px;
 }
 .portfolio-item .overlay a:hover p {
-    color: var(--textColor);
+    text-decoration: underline;
 }
 .portfolio-item .overlay a p {
     margin-bottom: 0px;
@@ -1548,11 +1562,27 @@ portfolio area ends here
 
 
 /*########################
-5. blogHome ---------------[########################]
+5. team ---------------[########################]
 ########################*/
 
 /*===========================
-5.1 blogHome area here
+5.1 team area here
+===========================*/
+.teamArea{
+    padding: 120px 0px;
+    overflow: hidden;
+}
+/*===========================
+team area ends here
+===========================*/
+
+
+/*########################
+6. blogHome ---------------[########################]
+########################*/
+
+/*===========================
+6.1 blogHome area here
 ===========================*/
 .blog-port{
     padding: 120px 0px;
@@ -1627,8 +1657,218 @@ blogHome area here
 ===========================*/
 
 
+/*########################
+7. blogDetails ---------------[########################]
+########################*/
+
+/*===========================
+7.1 blog-details area here
+===========================*/
+/* left  */
+.blog-details {
+    padding: 120px 0px;
+}
+.blog-details-left{}
+/* blog-details-left-post  */
+.blog-details-left-post {
+    margin-bottom: 50px;
+}
+.bdlp-img {
+    position: relative;
+    margin-bottom: 40px;
+}
+.bdlp-img a {
+    display: block;
+}
+.bdlp-img a img{
+    width: 100%;
+}
+.bdlp-img p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--mainColor);
+    margin-bottom: 0;
+    padding: 20px;
+}
+.bdlp-img p span {
+    color: var(--whiteColor);
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+}
+.bdlp-content{}
+.bdlp-content h4 {
+    margin-bottom: 30px;
+}
+.bdlp-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.bdlp-content p.bdlp-para2{
+    margin-bottom: 0px;
+}
+/* blog-details-left-social  */
+.blog-details-left-social {
+    border: 1px solid var(--border);
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bdls-tag {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-family: "tt-m";
+    text-transform: capitalize;
+}
+.bdls-tag span {
+    margin-left: 10px;
+}
+.bdls-social{}
+.bdls-social li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.bdls-social li a {
+    display: block;
+}
+.bdls-social li a i {
+    color: #989898;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.bdls-social li a:hover i{
+    color: var(--mainColor);
+}
+/* blog-details-left-leave  */
+.blog-details-left-leave {
+    margin-bottom: 50px;
+}
+.bdll-title {
+    margin-bottom: 20px;
+}
+.bdll-para {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+/* blog-details-left-form  */
+.blog-details-left-form{}
+.blog-details-left-form form{}
+.bdlf-group{}
+.bdlf-group:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.bdlf-group:nth-child(2) {
+    display: flex;
+    margin-bottom: 50px;
+}
+.bdlf-group:nth-child(3){}
+.bdlf-group input, 
+.bdlf-group textarea,
+.widget-search form input{
+    width: 100%;
+    border: 1px solid var(--border);
+    background: #f8faff;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 17px 20px;
+    outline: none;
+}
+.bdlf-group input::placeholder{
+    color: var(--textColor);
+}
+.bdlf-group textarea {}
+.bdlf-group textarea::placeholder{
+    color: var(--textColor);
+}
+.bdlf-group .submit{}
 
 
+
+/* right  */
+.blog-details-right{}
+
+
+
+/* widget-search area here  */
+.widget-search {
+    margin-bottom: 50px;
+}
+.widget-search form {
+    position: relative;
+}
+.widget-search form input {
+    padding: 17px 60px 17px 20px !important;
+}
+.widget-search form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.widget-search form button i {
+    color: var(--textColor);
+    font-size: 24px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.widget-search form button:hover i{
+    color: var(--mainColor);
+}
+
+
+/* widget-recent area here  */
+.widget-recent{}
+h4.widget-title{}
+.wr-content li{}
+.wr-content li:first-child{}
+.wr-content li:nth-child(2){}
+.wr-content li:last-child{}
+.wr-title{}
+.wr-para{}
+.wr-read{}
+
+
+
+/* widget-tag area here   */
+.widget-tag{}
+.wt-content{}
+.wt-content li{}
+.wt-content li a{}
+
+
+
+/* widget-calendar area here  */
+.widget-calendar{}
+
+
+
+
+
+
+
+
+
+
+
+/*===========================
+blog-details area ends here
+===========================*/
 
 
 
