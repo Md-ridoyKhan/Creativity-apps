@@ -560,6 +560,9 @@ large layout:  ---------
     .blog-details-left {
         margin-bottom: 80px;
     }
+    .blog-details-right {
+        margin-left: 0;
+    }
 
 
 
@@ -864,6 +867,9 @@ Small Layout: ---------
     }
     .bdll-para {
         font-size: 16px;
+    }
+    h4.widget-title {
+        font-size: 22px;
     }
 }
 /*########################
