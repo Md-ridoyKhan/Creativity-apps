@@ -51,6 +51,9 @@ CSS INDEX
 7. blogDetails
     7.1 blog-details area here
 
+8. blogDetailsLeft
+    8.1 blog-details area here
+
 
 
 ###########################################**/
@@ -1966,6 +1969,17 @@ blog-details area ends here
 ===========================*/
 
 
+/*########################
+8. blogDetailsLeft ---------------[########################]
+########################*/
+
+/*===========================
+8.1 blog-details area here
+===========================*/
+.blog-details-right.active {
+    margin-right: 40px;
+    margin-left: 0;
+}
 
 /*########################
 #theEndCSS########################

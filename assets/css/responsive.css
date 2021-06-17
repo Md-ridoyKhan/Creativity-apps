@@ -52,6 +52,8 @@ RESPONSIVE DEVICE
         3.13-992 team area here
     #blogDetails-992-------------------]
         3.14-992 blog-details area here
+    #blogDetailsLeft-992-------------------]
+        3.15-992 blog-details area here
 
     
 
@@ -63,6 +65,8 @@ RESPONSIVE DEVICE
         4.4-768 latestNews area here
     #services-768-------------------]
         4.5-768 services area here
+    #blogDetailsLeft-768-------------------]
+        4.6-576 about-banner area here
 
 
 5. 576px small devices
@@ -564,6 +568,19 @@ large layout:  ---------
         margin-left: 0;
     }
 
+    /* 
+    #blogDetailsLeft-992-------------------]
+    */
+    /*********************** 
+    3.15-992 blog-details area here
+    ***********************/
+    .blog-details-right.active {
+        margin-right: 0px;
+        margin-bottom: 80px;
+    }
+    .blog-details-left.active {
+        margin-bottom: 0;
+    }
 
 
 }
@@ -622,6 +639,21 @@ Medium Layout: ---------
     ***********************/
     .services-img {
         margin-bottom: 60px;
+    }
+
+
+    /* 
+    #blogDetailsLeft-768-------------------]
+    */
+    /*********************** 
+    4.6-576 about-banner area here
+    ***********************/
+    .ab-bannerItem ul li a.active{
+        font-size: 16px;
+    }
+    .ab-bannerItem h2.active{
+        font-size: 28px;
+        line-height: 36px;
     }
 
 }
@@ -871,6 +903,11 @@ Small Layout: ---------
     h4.widget-title {
         font-size: 22px;
     }
+
+
+    
+    
+
 }
 /*########################
 #theEndRESPONSIVE########################
