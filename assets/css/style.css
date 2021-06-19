@@ -30,6 +30,7 @@ CSS INDEX
     1.12 latestNews area here
     1.13 footer area here
     1.14 copyRight area here
+    1.15 topUp-btn area here
 
 2. about us
     2.1 about banner area here
@@ -1114,6 +1115,54 @@ footer area ends here
 copyRight area ends here
 ===========================*/
 
+
+/*===========================
+1.15 topUp-btn area here
+===========================*/
+.topUp-btn{
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+    border: 2px solid transparent;
+    background: var(--mainColor);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: var(--shadowMain);
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.topUp-btn i{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--whiteColor);
+    display: block;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.topUp-btn:hover{
+    background: transparent;
+    border: 2px solid var(--mainColor);
+}
+.topUp-btn:hover i{
+    color: var(--mainColor);
+}
+/*===========================
+topUp-btn area ends here
+===========================*/
 
 
 /*########################
