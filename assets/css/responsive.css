@@ -90,6 +90,8 @@ RESPONSIVE DEVICE
         5.14-576 blog-portfolio area here
     #blogDetails-576-------------------]
         5.15-576 blog-details area here
+    #contact-576-------------------]
+        5.16-576 contact area here
 
 
 
@@ -561,10 +563,12 @@ large layout:  ---------
     /*********************** 
     3.14-992 blog-details area here
     ***********************/
-    .blog-details-left {
+    .blog-details-left,
+    .c-map-items{
         margin-bottom: 80px;
     }
-    .blog-details-right {
+    .blog-details-right,
+    .c-map-items {
         margin-left: 0;
     }
 
@@ -905,6 +909,15 @@ Small Layout: ---------
     }
 
 
+    /* 
+    #contact-576-------------------]
+    */
+    /*********************** 
+    5.16-576 contact area here
+    ***********************/
+    .cf-group:nth-child(1) {
+        grid-template-columns: auto;
+    }
     
     
 
