@@ -1988,7 +1988,6 @@ blog-details area ends here
 .cf-group textarea::placeholder{
     color: var(--textColor);
 }
-.cf-group textarea::placeholder{}
 .cf-groups p {
     font-size: 16px;
     margin-bottom: 20px;
